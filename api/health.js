@@ -1,3 +1,5 @@
-export default function handler(req, res) {
-  res.status(200).json({ status: 'ok', message: 'GameCre8 API is running!' });
-}
+// api/health.js
+module.exports = (_req, res) => {
+  res.setHeader("Content-Type", "application/json");
+  res.status(200).send(JSON.stringify({ ok: true, time: new Date().toISOString() }));
+};
