@@ -1,5 +1,9 @@
 {
   "name": "gamecre8-api",
   "private": true,
-  "version": "0.0.1"
+  "version": "1.0.0",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "nanoid": "^4.0.2"
+  }
 }
